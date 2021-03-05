@@ -1,0 +1,60 @@
+@media only screen and (min-width: 1024px) {
+
+  .container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+
+    header {
+      width: 50%;
+      text-align: left;
+
+      & > * {
+        padding: .5em 0;
+      }
+
+      .header-heading {
+        font-size: 3em;
+        line-height: 1.2em;
+      }
+
+      .header-description {
+        width: 90%;
+      }
+    }
+
+    .button-and-form {
+
+      .trial-btn {
+        width: 100%;
+        
+  
+        .btn-text {
+          width: 100%;
+          text-align: center;
+          font-size: .75em;
+        }
+      }
+    } 
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+
+  .container {
+
+    header {
+      width: 33%;
+    }
+
+    .button-and-form {
+      width: 30%;
+
+      .form {
+        padding: 3em 0;
+      }
+    }
+  }
+
+}

@@ -1,0 +1,20 @@
+@media only screen and (min-width: 768px) {
+
+  .container {
+    height: 100vh;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+
+    header {
+      text-align: center;
+    }
+
+    .trial-btn {
+      width: 55%;
+      padding: 2em 0;
+      font-size: 1.25em;
+    }
+  }
+}

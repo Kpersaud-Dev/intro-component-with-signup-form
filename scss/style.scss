@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+::placeholder {
+  padding-left: 1em;
+  font-weight: 700;
+}
+
+$background-color: hsl(0, 100%, 74%);
+$button-background: hsl(154, 59%, 51%);
+$blue-button: hsl(248, 32%, 49%);
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;  
+}
+
+body {
+  background-image: url('/images/bg-intro-mobile.png');
+  background-color: hsl(0, 100%, 74%);
+  font-family: 'Poppins', sans-serif;
+  color: white;
+}
+
+.container {
+  padding: 1em;
+  margin-top: 2.5em;
+  margin-bottom: 2.5em;
+  
+  header {
+    text-align: center;
+
+    & > * {
+      padding: .5em 1em .5em 1em;
+    }
+
+    .header-heading {
+      font-weight: 600;
+      line-height: 40px;
+    }
+  }
+
+  .button-and-form {
+
+    .trial-btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: $blue-button;
+      color: white;
+      font-weight: 300;
+      text-align: center;
+      border-radius: 12px;
+      border: 0;
+      padding: 1.25em 0;
+      width: 100%;
+      margin: 2em 0 2em 0;
+      box-shadow: 0px 15px 20px -15px black;
+  
+      .btn-text {
+        text-align: center;
+        width: 50%;
+        line-height: 25px;
+        
+  
+        .bold-btn-text {
+          font-weight: 700;
+        }
+      }
+    }
+  
+    .form {
+      background-color: white;
+      color: hsl(246, 25%, 77%);
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: center;
+      align-items: center;
+      padding: 2em 0;
+      border-radius: 12px;
+      box-shadow: 0px 15px 20px -15px black;
+  
+      input {
+        margin-bottom: 1em;
+        padding: 1.25em 0;
+        border-radius: 5px;
+        border: 1px solid hsl(246, 25%, 77%);
+        width: 80%;      
+      }
+  
+      .submit-btn {
+        padding: 1em 0;
+        width: 80%;
+        background-color: $button-background;
+        color: white;
+        font-size: 1.25em;
+        border: 0;
+        border-radius: 7px;
+        margin-bottom: 1em;
+        box-shadow: 0px 15px 15px -15px black;
+      }
+  
+      .terms {
+        text-align: center;
+        font-size: .75em;
+        width: 80%;
+  
+        .terms-bold {
+          color: red;
+        }
+      }
+    }
+
+  }
+
+  
+}
+
+@import 'tablet';
+@import 'desktop';
