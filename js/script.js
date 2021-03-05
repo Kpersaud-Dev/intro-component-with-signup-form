@@ -23,6 +23,8 @@ const validateFirstName = name => {
   } else {
     firstName.classList.add('success');
     firstName.classList.remove('error');
+    // Remove existing error message
+    firstNameError.style.display = 'none';
   }
 }
 
@@ -36,6 +38,8 @@ const validateLastName = name => {
   } else {
     lastName.classList.add('success');
     lastName.classList.remove('error');
+    // Remove existing error message
+    lastNameError.style.display = 'none';
   }
 }
 
@@ -47,7 +51,7 @@ const validateEmail = email => {
   if(email.value.match(regex)) {
     email.classList.add('success');
     email.classList.remove('error');
-    
+
     // Remove existing error message
     emailError.style.display = 'none';
 
@@ -72,6 +76,7 @@ const validatePassword = pass => {
   } else {
     password.classList.add('success');
     password.classList.remove('error');
+    // Remove existing error message
     passwordError.style.display = 'none';
   }
 }
