@@ -55,7 +55,7 @@ body {
       border: 0;
       padding: 1.25em 0;
       width: 100%;
-      margin: 2em 0 2em 0;
+      margin: 2em 0 1em 0;
       box-shadow: 0px 15px 20px -15px black;
   
       .btn-text {
@@ -82,15 +82,67 @@ body {
       box-shadow: 0px 15px 20px -15px black;
   
       input {
-        margin-bottom: 1em;
-        padding: 1.25em 0;
+        margin: 1em 0 0 0;
+        padding: 1.25em 1em;
         border-radius: 5px;
         border: 1px solid hsl(246, 25%, 77%);
-        width: 80%;      
+        width: 80%;  
+
+
+        &.error {
+          border-color: red;
+        }
+
+      }
+
+      .error-message {
+        font-size: .75em;
+      }
+
+      .success {
+        border-color: green;
+      }
+
+      .first-name-error {
+        color: red;
+        display: none;
+
+        &.show {
+          display: block;
+        }
+      }
+
+      .last-name-error {
+        color: red;
+        display: none;
+
+        &.show {
+          display: block;
+        }
+      }
+
+      .email-error {
+        color: red;
+        display: none;
+
+        &.show {
+          display: block;
+        }
+      }
+
+      .password-error {
+        color: red;
+        display: none;
+
+        &.show {
+          display: block;
+        }
       }
   
       .submit-btn {
+        cursor: pointer;
         padding: 1em 0;
+        margin-top: 1em;
         width: 80%;
         background-color: $button-background;
         color: white;

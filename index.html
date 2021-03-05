@@ -33,20 +33,24 @@
       
       <form class="form">
         <input type="text" placeholder="First Name" id="first-name">
+        <div class="first-name-error error-message">First Name Cannot Be Empty</div>
+
         <input type="text" placeholder="Last Name" id="last-name">
+        <div class="last-name-error error-message">Last Name Cannot Be Empty</div>
+
         <input type="email" placeholder="Email Address" id="email-address">
+        <div class="email-error error-message">Looks like this is not an email</div>
+
         <input type="password" placeholder="Password" id="password">
+        <div class="password-error error-message">Password cannot be empty</div>
 
         <button class="submit-btn">Claim your free trial</button>
         <div class="terms">
           By clicking the button, you are agreeing to our <span class="terms-bold">Terms and Services</span>
         </div>
       </form>
-
     </div>
-
   </div>
-
 
    
   <script src="js/script.js"></script>
